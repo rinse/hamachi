@@ -13,3 +13,5 @@ COPY startup.sh ./
 COPY --from=builder /logmein-hamachi_amd64.deb ./
 RUN  dpkg -i logmein-hamachi_amd64.deb \
   && rm *.deb
+
+CMD [ "bash", "startup.sh" ]

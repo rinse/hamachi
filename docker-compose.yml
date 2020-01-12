@@ -12,6 +12,3 @@ services:
     volumes:
       - /etc/localtime:/etc/localtime:ro
       - ./config:/var/lib/logmein-hamachi:rw
-    command:
-      - bash
-      - startup.sh
